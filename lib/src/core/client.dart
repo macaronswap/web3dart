@@ -177,6 +177,12 @@ class Web3Client {
     return EtherAmount.fromUnitAndValue(EtherUnit.wei, hexToInt(data));
   }
 
+  Future<EtherAmount> getMaxPriorityFeePerGas() async {
+    final data = await _makeRPCCall<String>('eth_maxPriorityFeePerGas');
+
+    return EtherAmount.fromUnitAndValue(EtherUnit.wei, hexToInt(data));
+  }
+
   /// Returns the number of the most recent block on the chain.
   Future<int> getBlockNumber() {
     return _makeRPCCall<String>('eth_blockNumber')

@@ -1,3 +1,12 @@
+## 2.5.9
+  - Bug fixes
+
+## 2.5.8
+  - getBaseFee method added for eth_blobBaseFee
+
+## 2.5.7
+  - getMaxPriorityFeePerGas method added for maxPriorityFeePerGas
+
 ## 2.5.6
   - Add getConnectedAccounts method to Web3Client
   
